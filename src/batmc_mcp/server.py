@@ -66,5 +66,5 @@ mcp = FastMCP("BATMC Lending", lifespan=app_lifespan)
 
 # Import tools to register them
 import batmc_mcp.tools.borrowers  # noqa: F401
-# import batmc_mcp.tools.loans      # noqa: F401  (Plan 03)
-# import batmc_mcp.tools.payments   # noqa: F401  (Plan 03)
+import batmc_mcp.tools.loans      # noqa: F401
+import batmc_mcp.tools.payments   # noqa: F401
