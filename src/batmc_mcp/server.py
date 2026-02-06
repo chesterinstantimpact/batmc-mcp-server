@@ -64,7 +64,7 @@ async def app_lifespan(server: FastMCP) -> AsyncIterator[AppContext]:
 
 mcp = FastMCP("BATMC Lending", lifespan=app_lifespan)
 
-# Import tools to register them (will be populated in Plans 02 and 03)
-# import batmc_mcp.tools.borrowers  # noqa: F401
-# import batmc_mcp.tools.loans      # noqa: F401
-# import batmc_mcp.tools.payments   # noqa: F401
+# Import tools to register them
+import batmc_mcp.tools.borrowers  # noqa: F401
+# import batmc_mcp.tools.loans      # noqa: F401  (Plan 03)
+# import batmc_mcp.tools.payments   # noqa: F401  (Plan 03)
