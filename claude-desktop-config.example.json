@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "batmc-lending": {
+      "command": "python",
+      "args": ["-m", "batmc_mcp"],
+      "cwd": "/path/to/mcp-server",
+      "env": {
+        "BATMC_ENV": "dev",
+        "BATMC_API_URL": "https://batmc-lending-api.onrender.com",
+        "BATMC_SUPABASE_URL": "https://YOUR_PROJECT.supabase.co",
+        "BATMC_SUPABASE_ANON_KEY": "your_anon_key_here",
+        "BATMC_USER_EMAIL": "chester@example.com",
+        "BATMC_USER_PASSWORD": "your_password_here",
+        "BATMC_USER_NAME": "Chester"
+      }
+    }
+  }
+}
